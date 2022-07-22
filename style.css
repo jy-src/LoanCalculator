@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+#description {
+    text-align: left;
+}
+
+input {
+    display: block;
+}
+
+fieldset {
+    margin: 20px 0;
+}
+
+#results {
+    margin-top: 70px;
+    display: flex;
+    gap: 200px;
+}
+
+.display {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+section {
+    margin-top: 60px;
+    display: flex;
+    gap: 50px;
+    opacity: 1;
+}
+
+.results {
+    opacity: 0;
+}
+
+@keyframes show {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes remove {
+    100% {
+        opacity: 0;
+    }
+}
